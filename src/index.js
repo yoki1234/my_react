@@ -3,15 +3,30 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import listItem from './list/listItem1';
+import ListHeader from './list/ListHeader';
+import "./list/app-main.css";
+import List1 from './list/List1';
+import Footer from './list/Footer';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div className='app'>
+    <ListHeader />
+    <div className='app-body'>
+      <List1 />
+    </div>
+    <div className='app-footer'>
+      <Footer />
+    </div>
+  </div>
+
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
