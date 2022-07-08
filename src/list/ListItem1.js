@@ -4,18 +4,24 @@ import List2 from "./List2";
 import "./listItem.css";
 
 function ListItem1(props){
-  console.log("heyyy",props);
+  const{
+    title,
+    descr,
+    isActive
+  }=props
     return(
       <div className='app-list'>
           <hr/>
           <div className='app-heading-name'>
-            <h4>{props.title}</h4>
+            <h4>{title}</h4>
           </div>
           <div className='app-discription'>
-            {props.descr}
+            {descr}
           </div> 
           <div className='app-item-list'>
-            <List2 isActive={props.isActive}/>
+            <List2 onAction={()=>{
+              console.log('Parent Clicked')}
+            } isActive={isActive}/>
            
           
 
