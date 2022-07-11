@@ -1,5 +1,5 @@
 .app-list{
-    width: 50%;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,12 +7,37 @@
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
-    height: 100%;
+    height: 275px;
 }
+
 .app-heading-name{
     padding:0;
     margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    
 }
+.app-heading-name h4{
+    text-align: center;
+}
+.app-heading-name p{
+    width: 100%;
+    text-align: end;
+}
+.app-heading-name label{
+    cursor: pointer;
+    font-size: 12px;
+    color: blue;
+    font-weight: 600;
+    
+}
+.app-heading-name label:active{
+    color: red;
+}
+
 .app-discription{
     text-align: center;
    color: gray;

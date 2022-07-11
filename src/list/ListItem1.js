@@ -7,13 +7,15 @@ function ListItem1(props){
   const{
     title,
     descr,
-    isActive
+    isActive,
+    onDelete
   }=props
     return(
       <div className='app-list'>
-          <hr/>
           <div className='app-heading-name'>
+            <p><label onClick={onDelete}>Delete</label></p>
             <h4>{title}</h4>
+            
           </div>
           <div className='app-discription'>
             {descr}
@@ -26,7 +28,7 @@ function ListItem1(props){
           
 
           </div> 
-          <hr />
+          
         </div>
     )
   }

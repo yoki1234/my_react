@@ -6,7 +6,11 @@
 }
 .list-footer{
     font-size: 14px;
+    margin: 0 0 0 10px;
 }
 .list-header select{
     width: 150px;
+}
+.list-header{
+    margin: 0 0 0 10px;
 }
